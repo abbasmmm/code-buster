@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(30, 41, 59);
+  background-color: #222831;
+  color: rgb(125, 211, 252);
+  min-height: 100vh;
+  height: 100vh;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  padding: 10px 40px;
+}
+
+.header {
+  background-color: rgba(51, 65, 85, 0.5);
+  margin: 0;
+  padding: 30px;
+}
+
+.hex4 {
+  height: 400px;
+  width: 400px;
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background: #31363F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Center the text horizontally */
+
+  font-size: 50px;
+}
+
+.category .hex4 {
+  height: 550px;
+  width: 550px;
+}
+
+.hex4:hover {
+  background: #ea7432;
+  cursor: pointer;
+  color: white;
+  /* Ensure the text color contrasts with the background */
+}
+
+.row1,
+.row2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.row2 {
+  margin-top: -67px;
+}
+
+.category-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* Stretch menu to cover entire height */
+  width: 70px;
+  /* Adjust the width of the menu */
+  background-color: #31363F;
+  /* Background color of the menu */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* Ensure container takes full height of menu */
+}
+
+/* Style SVGs as needed */
+.svg-container svg {
+  margin-bottom: 10px;
+  /* Adjust spacing between SVGs */
+  /* fill: #fff; */
+  /* SVG fill color */
+}
+
+.icon-btn {
+  cursor: pointer;
+}
+
+.questions {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: calc(100vh - 75px);
+}
+
+.question {
+  background-color: #31363F;
+  margin: 20px 20px 20px 100px;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: large;
+}
+
+.answer {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  background-color: #31363F;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: large;
+  display: grid;
+  grid-template-columns: 40px auto;
+
+  span {
+    font-weight: bolder;
+  }
+
+  pre {
+    margin: 2px;
+  }
+}
+
+.option.selected {
+  background-color: #76ABAE;
+  color: #31363F;
+}
+
+
+.btn {
+  padding: 13px 30px;
+  font-size: large;
+  background: #31363F;
+  border: 1px solid #31363F;
+  border-radius: 1rem;
+  float: right;
+  color: #EEEEEE;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #ea7432;
+  cursor: pointer;
+}
+
+.good-job {
+  background-color: #222831;
+  position: fixed;
+  top: 0;
+  left: 80px;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: -140px;
+
+  h1{
+    font-size: 100px;
+    margin: 0;
+  }
+
+  h1.timedout{
+    color: red;
+  }
+
+  span{
+    color: #ea7432;
+    font-size: 60px;
+  }
+}
+
+.congrats{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: -100px;
+
+  h1{
+    font-size: 100px;
+    margin: 0;
+  }
+}
+
+pre{
+  margin: 1rem;
+  white-space:;
+}
